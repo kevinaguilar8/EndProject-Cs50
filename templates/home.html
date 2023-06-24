@@ -1,0 +1,65 @@
+{% extends './layout.html' %} 
+
+{% block title %}HOME{%endblock %} 
+
+
+{% block customCss %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/index.css') }}"
+/>
+{%endblock%} 
+
+{% block body %}
+<div class="container-fluid cont-pri">
+    <div class="row conte-sec d-flex justify-content-center aling-items-center">
+      <!-- Hola -->
+      <div class="col-12 col-sm-6 texto">
+        <h1>"Words in the Digital Age"</h1>
+        <h5 class="p-2">
+          "Explore the world of literature in the digital age with our book
+          reviews and personalized recommendations. Join the word revolution.
+          Enter now!"
+        </h5>
+        <div class="boton-info p-2">
+          <button type="button" class="btn btn-warning">
+            <a href="/register" style="text-decoration: none">GET STARTED</a>
+          </button>
+        </div>
+      </div>
+  
+      <!-- imagen -->
+      <div class="col-12 col-sm-6 carrito">
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner images">
+            <div class="carousel-item active" data-bs-interval="1000">
+              <img
+                src="{{ url_for('static', filename='images/imagen1.svg') }}"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="{{ url_for('static', filename='images/imagen1.svg') }}"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="{{ url_for('static', filename='images/imagen1.svg') }}"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

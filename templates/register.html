@@ -1,0 +1,38 @@
+{% extends './layout.html' %}
+{% block title %}Register{%endblock %}
+
+<!-- register formulario -->
+{% block body %}
+<div class="container-fluid vh-100" style="margin-top:70px">
+    <div class="" style="margin-top:50px">
+        <div class="rounded d-flex justify-content-center">
+            <div class="col-md-4 col-sm-12 shadow-lg p-5 bg-light">
+                <div class="text-center">
+                    <h3 class="text-primary">Create Account</h3>
+                </div>
+                <div class="p-4">
+                    <form action="/register" class="formulario" method="POST">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text bg-primary"><i
+                                    class="bi bi-person-plus-fill text-white"></i></span>
+                            <input type="text" class="form-control" placeholder="username" name="username">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text bg-primary"><i class="bi bi-envelope text-white"></i></span>
+                            <input type="password" class="form-control" placeholder="password" name="password">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text bg-primary"><i class="bi bi-key-fill text-white"></i></span>
+                            <input type="password" class="form-control" placeholder="password" name="confirmation">
+                        </div>
+                        <div class="d-grid col-12 mx-auto">
+                            <button class="btn btn-primary" type="submit"><span></span> Sign up</button>
+                        </div>
+                        <p class="mt-2">Do you already have an account?<a class="link" href="/login">Login</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% block customCss %}
+<link
+rel="stylesheet"
+href="{{ url_for('static', filename='css/404.css') }}"
+/>
+{% endblock %} 
+
+
+{% block body %}
+    <div class="container">
+    <img src="{{ url_for('static', filename='Images/404.png') }}" alt="404 error" />
+    <h1>404</h1>
+    <p>Oops! Page not found</p>
+    <a href="/">Go back to homepage</a>
+    </div>
+{% endblock %}

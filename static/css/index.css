@@ -1,0 +1,153 @@
+html,
+body {
+  height: 100%;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.formulario{
+  margin-top: 120px;
+}
+
+.card-body {
+  text-align: start;
+}
+
+.card-info{
+  border-top: 2px solid #ffc107;
+}
+
+.card-body {
+    text-align: start;
+}
+
+.card-res{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.book-container {
+  display: flex;
+  justify-content: center;
+}
+
+.form-border {
+  border-color: #ECDB88;
+  border-style: solid;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+a{
+  color: black;
+}
+
+.res-busqueda{
+  margin-top: 20px;
+}
+
+/* barra de busqueda */
+@media (min-width: 992px) {
+  .buqueda{
+    width: 650px;
+  }
+}
+
+/* estilos de hme */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 540px) {
+  .cont-pri{
+      margin-top: 25px;
+  }
+  .carrito{
+      margin-top: 45px;
+      /* background-color: black; */
+  }
+  .cont-pri .conte-sec .boton a{
+      color: black;
+  }
+  
+  .cont-pri .conte-sec .boton a:hover{
+      color: #8D3879;
+  
+  }
+  
+}
+
+
+@media (min-width: 992px) {
+  .cont-pri{
+      margin-top: 70px;
+  }
+  
+  .conte-sec{
+      margin: 20px;
+      padding: 10px;
+      /* background-color: antiquewhite; */
+  }
+  
+  .texto{
+      padding: 4px;
+      /* background-color: brown; */
+  }
+  
+  .carrito{
+      padding: 10px;
+      /* background-color: blueviolet; */
+  }
+  
+  .carrito .images{
+      width: 490px;
+      padding: 10px
+  }
+  
+  .title{
+      padding: 20px;
+  }
+  
+  .boton .a{
+      text-decoration: none;
+  }
+
+  .cont-pri .conte-sec .boton{
+      margin-top: 25px;
+  }
+  
+  
+  .cont-pri .conte-sec .boton a{
+      color: black;
+  }
+  
+  .cont-pri .conte-sec .boton a:hover{
+      color: #fcb900;
+  
+  }
+  
+}
