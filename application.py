@@ -2,15 +2,12 @@ import os
 import json
 import requests
 
-from flask import Flask, session, render_template, url_for, request, redirect, flash, jsonify
+from flask import Flask, session, render_template, url_for, request, redirect, flash
 from flask_session import Session
 from sqlalchemy import create_engine, text
 from sqlalchemy.orm import scoped_session, sessionmaker
 from werkzeug.security import check_password_hash, generate_password_hash
-from dotenv import load_dotenv
-
-load_dotenv()
-
+from loginRequired import login_required
 
 app = Flask(__name__)
 
@@ -39,10 +36,10 @@ def login():
         password = request.form.get('password')
 
         if not request.form.get("username"):
-            flash("INGRESE USUARIO", "error")
+            flash("INGRESE USUARIO", "succes")
             return render_template("login.html")
         elif not request.form.get("password"):
-            flash("INGRESE CONTRASEÑA", "error")
+            flash("INGRESE CONTRASEÑA", "succes")
             return render_template("login.html")
         
         Vuser = text("SELECT * FROM users WHERE usuario=:username")
@@ -64,8 +61,8 @@ def login():
         return render_template("login.html")
     
 @app.route("/logout")
+@login_required
 def logout():
-    
     session.clear()
 
     flash("Hasta luego", "info")
@@ -101,7 +98,10 @@ def register():
    else:
         return render_template('register.html')
 
-
+@app.route("/articulos",methods=['GET', 'POST'])
+@login_required
+def articulos():
+    return render_template("articulos.html")
 
 #pagina no encontrada
 @app.errorhandler(404)

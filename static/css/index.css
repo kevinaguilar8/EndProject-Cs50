@@ -151,3 +151,16 @@ a{
   }
   
 }
+
+/* quitar estilos a etiqueta a */
+a {
+  text-decoration: none;
+}
+
+.btn:hover{
+  background-color: royalblue;
+}
+
+a:hover{
+  color: blanchedalmond;
+}

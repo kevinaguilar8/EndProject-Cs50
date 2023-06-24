@@ -1,6 +1,10 @@
 {% extends 'layout.html' %}
 {% block title %}Articulos{%endblock %}
 
+{% block customCss %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{%endblock%}
+
 {% block body %}
     <h1 class="d-flex justify-content-center">LIBROS DISPONIBLES EN LA TIENDA</h1>
     <div class="container-fluid">
@@ -9,14 +13,17 @@
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                       <div class="col-md-4">
-                        <img src="{{ url_for('static', filename='images/book.svg') }}" class="img-fluid rounded-start" alt="...">
+                        <img src="{{ url_for('static', filename='images/calculo.jpeg') }}" class="img-fluid rounded-start" alt="...">
                       </div>
                       <div class="col-md-8">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
+                          <h5 class="card-title">Cálculo</h5>
                           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                           <div>
-                            <button type="button" class="btn btn-success">COMPRAR</button>
+                            <button type="button" class="btn btn-success">
+                              <a href="https://api.whatsapp.com/send?
+                              phone=77085337&text=Hola, quiero comprar tu producto">COMPRAR</a>
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -27,13 +34,18 @@
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                       <div class="col-md-4">
-                        <img src="{{ url_for('static', filename='images/book.svg') }}" class="img-fluid rounded-start" alt="...">
+                        <img src="{{ url_for('static', filename='images/cDiferencial.jpeg') }}" class="img-fluid rounded-start" alt="...">
                       </div>
                       <div class="col-md-8">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
+                          <h5 class="card-title">Cálculo Diferencial</h5>
                           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                          <div>
+                            <button type="button" class="btn btn-success">
+                              <a href="https://api.whatsapp.com/send?
+                              phone=77085337&text=Hola, quiero comprar tu producto">COMPRAR</a>
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -43,13 +55,18 @@
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                       <div class="col-md-4">
-                        <img src="{{ url_for('static', filename='images/book.svg') }}" class="img-fluid rounded-start" alt="...">
+                        <img src="{{ url_for('static', filename='images/cal4.jpeg') }}" class="img-fluid rounded-start" alt="...">
                       </div>
                       <div class="col-md-8">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
+                          <h5 class="card-title">Cálculo Trascendiente</h5>
                           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                          <div>
+                            <button type="button" class="btn btn-success">
+                              <a href="https://api.whatsapp.com/send?
+                              phone=77085337&text=Hola, quiero comprar tu producto">COMPRAR</a>
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -59,13 +76,18 @@
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                       <div class="col-md-4">
-                        <img src="{{ url_for('static', filename='images/book.svg') }}" class="img-fluid rounded-start" alt="...">
+                        <img src="{{ url_for('static', filename='images/ecuacionesD.jpeg') }}" class="img-fluid rounded-start" alt="...">
                       </div>
                       <div class="col-md-8">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
+                          <h5 class="card-title">Ecuaciones Diferenciales</h5>
                           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                          <div>
+                            <button type="button" class="btn btn-success">
+                              <a href="https://api.whatsapp.com/send?
+                              phone=77085337&text=Hola, quiero comprar tu producto">COMPRAR</a>
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -75,18 +97,44 @@
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                       <div class="col-md-4">
-                        <img src="{{ url_for('static', filename='images/book.svg') }}" class="img-fluid rounded-start" alt="...">
+                        <img src="{{ url_for('static', filename='images/fisica.jpeg') }}" class="img-fluid rounded-start" alt="...">
                       </div>
                       <div class="col-md-8">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
+                          <h5 class="card-title">Física</h5>
                           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                          <div>
+                            <button type="button" class="btn btn-success">
+                              <a href="https://api.whatsapp.com/send?
+                              phone=77085337&text=Hola, quiero comprar tu producto">COMPRAR</a>
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
                 </div>
             </div>
+            <div class="col-12 col-sm-3 col-lg-4">
+              <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="{{ url_for('static', filename='images/fisica2.jpeg') }}" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Física General</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div>
+                          <button type="button" class="btn btn-success">
+                            <a href="https://api.whatsapp.com/send?
+                            phone=77085337&text=Hola, quiero comprar tu producto">COMPRAR</a>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
         </div>
     </div>
 {% endblock %}
